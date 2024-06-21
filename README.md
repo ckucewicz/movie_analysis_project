@@ -30,7 +30,20 @@ Data on movies is collected by a variety of different sources. For this project,
     ![alt text](Movie_data_ERD.png "Title")
 
 ### Data Preparation
+During the data preparation stage, I focused on cleaning four datasets: `budgets`, `movie_basics`, `persons`, and `principals`.
 
+The data cleaning process began by converting columns to their appropriate Python data types. To facilitate this, I created a function called `get_info()` to check each table's `.info()`, which allowed me to verify the data types and identify `NaN` values in each feature. For instance, I converted the `production_budget`, `domestic_gross`, and `worldwide_gross` columns in the budgets dataframe from objects to floats, as they were originally stored incorrectly.
+
+I filtered out outliers and included only movies released before 2024. Irrelevant columns, such as `id` in `budgets`, were removed. `NaN` values were addressed by filtering out rows in movie_basics where both `runtime_minutes` and `genres` were `NaN`.
+
+In the `principals` table, I removed the `job`, `characters`, and `ordering` columns due to redundancy or irrelevance, and in the `persons` table, I removed `birth_year`, `death_year`, and `primary_profession` for the same reasons.
+
+After cleaning and processing all four dataframes, I used filtering and join operations to create three new dataframes: `top_people_budgets`, `top_roi_movie_basics`, and `budgets_no_outliers`. These dataframes contain information about movies in the top 25% of ROIs, which I used for further analysis.
+
+* `top_people_budgets` includes information about individuals who worked on movies in the top 25% of ROIs, such as their names, movie titles, and job professions.
+* `top_roi_movie_basics` contains details about movies with the highest 25% ROI, including titles, genres, runtimes, and budget information.
+* `budgets_no_outliers` provides budget information about all movies from the cleaned dataset.
+  
 ## Exploratory Data Analysis
 
 The following are findings from this analysis:
