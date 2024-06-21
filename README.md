@@ -121,12 +121,16 @@ Contact Chris Kucewicz at [cfkucewicz@gmail.com](cfkucewicz@gmail.com) with addi
 
 ## Repository Structure
 ```
-├── analysis_visualizations
+├── Visualizations                            
     ├── ...                                   # Visualizations from analysis
-├── presentation_deliverables                 
-    ├── Jupyter Notebook                      # pdf version of notebook used for analysis
-    ├── Phase 1 Final Project Presentation    # non-technical presentation slideshow
-    ├── aircraft_safety_dashboard             # Tableau dashboard
-    └── ckucewicz_aircraft_safety_github.pdf  # pdf version of github repo
-├── AviationData.csv
+├── zippedData                               
+    ├── ...                                   # data in zipped format
+├── .gitignore
 ├── Notebook.ipynb
+├── README.md
+├── miscellaneous_notebook.ipynb
+├── presentation_deliverables
+    ├── movie_analysis_presentation.pdf       # non-technical presentation slideshow
+    ├── Jupyter Notebook                      # pdf version of notebook used for analysis
+    └── ckucewicz_movie_analysis_github.pdf   # pdf version of github repo
+
