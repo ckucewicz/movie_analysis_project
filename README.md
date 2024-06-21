@@ -14,7 +14,7 @@ The success of this project will be measured by providing three well-supported r
 Data on movies is collected by a variety of different sources. For this project, I used data from the following sources:
     
 - The Numbers' `budgets` dataset
-    - This dataset includes 6 features and 5782 observations. Each entry in the dataset represents a different movie. For each entry, information is included about the movie's release data, production budget, domestic gross box office, and worldwide gross box office.
+    - This dataset includes 6 features and 5,782 observations. Each entry in the dataset represents a different movie. For each entry, information is included about the movie's release data, production budget, domestic gross box office, and worldwide gross box office.
     
     
 - IMDB's film database
@@ -22,12 +22,12 @@ Data on movies is collected by a variety of different sources. For this project,
     
     - From this database, I used the following tables: `movie_basics`, `persons`, and `principals`
     
-    - `movie_basics` includes **6 features** with **146144 observations**. Each entry in this dataset represents a different movie, where `movie_id` is its unique ID (primary key). Additional information is included about each movie such as `original_title`, `runtime_minutes`, and `genres`.
+    - `movie_basics` includes **6 features** with **146,144 observations**. Each entry in this dataset represents a different movie, where `movie_id` is its unique ID (primary key). Additional information is included about each movie such as `original_title`, `runtime_minutes`, and `genres`.
     
-    - The `persons` table includes **5 features** with **606648 entries**. Each entry represents a person who took part in a movie, where each person has a unique identifier (`person_id`). This table also includes information about each person such as their `primary_name`, `birth_year`, and `primary_professions` 
+    - The `persons` table includes **5 features** with **606,648 entries**. Each entry represents a person who took part in a movie, where each person has a unique identifier (`person_id`). This table also includes information about each person such as their `primary_name`, `birth_year`, and `primary_professions` 
     
-     - The `principals` table contains **6 features** and **1028186** entries, where each entry represents a person who worked in a movie. This table contains two foreign keys (`movie_id` and `person_id`). Additional information includes the `character` the person played and their role on the film (`category`). 
-    ![alt text](Movie_data_ERD.png "Title")
+     - The `principals` table contains **6 features** and **1,028,186** entries, where each entry represents a person who worked in a movie. This table contains two foreign keys (`movie_id` and `person_id`). Additional information includes the `character` the person played and their role on the film (`category`). 
+    <img src= "https://github.com/ckucewicz/movie_analysis_project/blob/e917e0980cc96c1de7dafcb5e39f784aaee0c48b/Visualizations/IMDB%20ERD.png" width="550" height="350">
 
 ### Data Preparation
 During the data preparation stage, I focused on cleaning four datasets: `budgets`, `movie_basics`, `persons`, and `principals`.
@@ -53,17 +53,32 @@ The following are findings from this analysis:
 - The typical movie had an estimated **16 million dollar production budget**, generated an estimated **26 million dollars in worldwide gross revenue**, and produced an estimated **66% return on investment**.
 
 
+<img src= "https://github.com/ckucewicz/movie_analysis_project/blob/e917e0980cc96c1de7dafcb5e39f784aaee0c48b/Visualizations/top_film_genres.png" width="775" height="400">
+
 - **Dramas** and **comedies** were the two **most common genres** for the movies in the top 25% of ROI.
 
+  
+<img src= "https://github.com/ckucewicz/movie_analysis_project/blob/e917e0980cc96c1de7dafcb5e39f784aaee0c48b/Visualizations/film_runtime_boxplot.png" width="660" height="375">
 
 - The middle 50% of the movies with the highest ROI had **runtimes between 87 and 113 minutes**.
 
 
+<img src= "https://github.com/ckucewicz/movie_analysis_project/blob/e917e0980cc96c1de7dafcb5e39f784aaee0c48b/Visualizations/top_profession_roi.png" width="625" height="500">
+
 - The three film **professions that generate the highest ROI** for dramas and comedies are: **composers**, **directors**, & **producers**.
+
+
+<img src= "https://github.com/ckucewicz/movie_analysis_project/blob/e917e0980cc96c1de7dafcb5e39f784aaee0c48b/Visualizations/film_composer_gross.png" width="775" height="400">
 
  - The 5 highest grossing drama & comedy ***composers*** are: Danny Elfman, Alexandre Desplat, Marco Beltrami, Thomas Newman, Theodore Shapiro
 
+
+<img src= "https://github.com/ckucewicz/movie_analysis_project/blob/e917e0980cc96c1de7dafcb5e39f784aaee0c48b/Visualizations/film_director_gross.png" width="775" height="400">
+
  - The 3 highest grossing drama & comedy ***directors*** are: David O. Russell, Steven Spielberg, Damien Chazelle
+
+
+<img src= "https://github.com/ckucewicz/movie_analysis_project/blob/e917e0980cc96c1de7dafcb5e39f784aaee0c48b/Visualizations/film_producer_gross.png" width="775" height="400">
 
  - The 3 highest grossing drama & comedy ***producers*** are: Simon Kinberg, Michael De Luca, Dana Brunetti
 
@@ -106,12 +121,16 @@ Contact Chris Kucewicz at [cfkucewicz@gmail.com](cfkucewicz@gmail.com) with addi
 
 ## Repository Structure
 ```
-├── analysis_visualizations
+├── Visualizations                            
     ├── ...                                   # Visualizations from analysis
-├── presentation_deliverables                 
-    ├── Jupyter Notebook                      # pdf version of notebook used for analysis
-    ├── Phase 1 Final Project Presentation    # non-technical presentation slideshow
-    ├── aircraft_safety_dashboard             # Tableau dashboard
-    └── ckucewicz_aircraft_safety_github.pdf  # pdf version of github repo
-├── AviationData.csv
+├── zippedData                               
+    ├── ...                                   # data in zipped format
+├── .gitignore
 ├── Notebook.ipynb
+├── README.md
+├── miscellaneous_notebook.ipynb
+├── presentation_deliverables
+    ├── movie_analysis_presentation.pdf       # non-technical presentation slideshow
+    ├── Jupyter Notebook                      # pdf version of notebook used for analysis
+    └── ckucewicz_movie_analysis_github.pdf   # pdf version of github repo
+
