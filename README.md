@@ -1,5 +1,5 @@
 # Movie Analysis Project
-Author: [Chris Kucewicz](cfkucewicz@gmail.com)
+Author: [Chris Kucewicz](https://www.linkedin.com/in/chriskucewicz/)
 ## Business Understanding
 ### Background
 My company is looking to get into movie creation using their newly created movie studio. 
@@ -115,7 +115,7 @@ With these recommendations in mind, I am interested the following next steps:
 ## Additional Information
 View the full analysis in the Jupyter Notebook]().
 
-View the [presentation](https://github.com/ckucewicz/movie_analysis_project/blob/a540d2c0afd1ef4092ef17e76c24f672e5d5b399/movie_analysis_presentation.pdf)
+View the [presentation](https://github.com/ckucewicz/movie_analysis_project/blob/79026867d1f580e71e3d3ac00b97dc97b1132a29/presentationDeliverables/movie_analysis_presentation.pdf)
 
 Contact Chris Kucewicz at [cfkucewicz@gmail.com](cfkucewicz@gmail.com) with additional questions.
 
@@ -123,14 +123,14 @@ Contact Chris Kucewicz at [cfkucewicz@gmail.com](cfkucewicz@gmail.com) with addi
 ```
 ├── Visualizations                            
     ├── ...                                   # Visualizations from analysis
+├── presentationDeliverables
+    ├── movie_analysis_presentation.pdf       # non-technical presentation slideshow
+    ├── Jupyter Notebook                      # pdf version of notebook used for analysis
+    └── ckucewicz_movie_analysis_github.pdf   # pdf version of github repo
 ├── zippedData                               
     ├── ...                                   # data in zipped format
 ├── .gitignore
 ├── Notebook.ipynb
 ├── README.md
 ├── miscellaneous_notebook.ipynb
-├── presentation_deliverables
-    ├── movie_analysis_presentation.pdf       # non-technical presentation slideshow
-    ├── Jupyter Notebook                      # pdf version of notebook used for analysis
-    └── ckucewicz_movie_analysis_github.pdf   # pdf version of github repo
 
