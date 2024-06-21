@@ -20,7 +20,7 @@ Data on movies is collected by a variety of different sources. For this project,
 - IMDB's film database
     - This database includes 8 tables. Its entity-related diagram (ERD) is shown below. 
     
-    - From this database, I used the following tables: movie_basics, persons, and principals
+    - From this database, I used the following tables: `movie_basics`, `persons`, and `principals`
     
     - `movie_basics` includes **6 features** with **146144 observations**. Each entry in this dataset represents a different movie, where `movie_id` is its unique ID (primary key). Additional information is included about each movie such as `original_title`, `runtime_minutes`, and `genres`.
     
