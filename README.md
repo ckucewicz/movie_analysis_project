@@ -113,9 +113,9 @@ With these recommendations in mind, I am interested the following next steps:
     Which factors most strongly correlate with a movie's ROI?
 
 ## Additional Information
-View the full analysis in the [Jupyter Notebook](https://github.com/ckucewicz/movie_analysis_project/blob/07123b79b30ddefb7989c1a8490f676efb4ed764/Notebook.ipynb).
+View the full analysis in the [Jupyter Notebook](https://github.com/ckucewicz/movie_analysis_project/blob/fcec1f171661ca4222dcc62912832c518d62b348/presentationDeliverables/notebook_movie_analysis.pdf).
 
-View the [presentation](https://github.com/ckucewicz/movie_analysis_project/blob/79026867d1f580e71e3d3ac00b97dc97b1132a29/presentationDeliverables/movie_analysis_presentation.pdf)
+View the [presentation](https://github.com/ckucewicz/movie_analysis_project/blob/fcec1f171661ca4222dcc62912832c518d62b348/presentationDeliverables/presentation_movie_analysis.pdf)
 
 Contact Chris Kucewicz at [cfkucewicz@gmail.com](cfkucewicz@gmail.com) with additional questions.
 
